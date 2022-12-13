@@ -9,6 +9,8 @@ services:
     restart: always
     ports:
       - "8545:8545"
+    environment:
+      TZ: Asia/Shanghai
     entrypoint:
       - 'node'
       - '/app/ganache-core.docker.cli.js'
