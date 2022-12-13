@@ -15,5 +15,6 @@ services:
       - 'node'
       - '/app/ganache-core.docker.cli.js'
       - '--accounts=100'
+      - '--defaultBalanceEther=10000'
       - '--deterministic'
       - '--db=/app/db'
